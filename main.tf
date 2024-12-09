@@ -49,7 +49,7 @@ resource "datadog_dashboard" "aws_dashboard" {
   widget {
     timeseries_definition {
       request {
-        q            = "avg:aws.ec2.mem.used{environment:production} by {host}"
+        q            = "avg:aws.ec2.mem.used{environment:development} by {tech4dev1}"
         display_type = "line"
         style {
           palette    = "orange"
